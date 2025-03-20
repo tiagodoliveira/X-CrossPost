@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-CrossPost Settings</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      width: 320px;
+      padding: 16px;
+      margin: 0;
+      background: #f7f9fa;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0 0 16px 0;
+      color: #1DA1F2;
+    }
+    .section {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .platform {
+      margin-bottom: 16px;
+    }
+    .platform:last-child {
+      margin-bottom: 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .button {
+      width: 100%;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color 0.2s;
+      margin-bottom: 8px;
+    }
+    .button-primary {
+      background-color: #1DA1F2;
+      color: white;
+    }
+    .button-primary:hover {
+      background-color: #1a91da;
+    }
+    .button-secondary {
+      background-color: #e8f5fd;
+      color: #1DA1F2;
+    }
+    .button-secondary:hover {
+      background-color: #d8eafd;
+    }
+    .button:disabled {
+      background-color: #e1e8ed;
+      color: #657786;
+      cursor: not-allowed;
+    }
+    .status {
+      font-size: 14px;
+      color: #657786;
+      margin-top: 8px;
+    }
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .checkbox-wrapper input[type="checkbox"] {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>X-CrossPost Settings</h1>
+
+  <div class="section">
+    <div class="platform">
+      <label>Mastodon</label>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="mastodon-toggle" />
+        <span>Enable cross-posting to Mastodon</span>
+      </div>
+      <button id="mastodon-auth-btn" class="button button-primary">Connect Mastodon Account</button>
+      <button id="disconnectMastodon" class="button button-secondary">Disconnect Mastodon</button>
+      <div id="mastodon-status" class="status"></div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
