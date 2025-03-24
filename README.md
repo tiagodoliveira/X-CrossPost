@@ -5,7 +5,10 @@ X-CrossPost is a Chrome extension that allows you to cross-post your X content t
 - Toggle cross-posting on or off for Mastodon.
 - Securely store your Mastodon API token.
 
-## Installation
+## Chrome Store Installation
+1. Download the extension through https://chromewebstore.google.com/detail/jlgeioimnhchgoemldgcohgdglmodnoj
+
+## Manual Installation
 1. Download or clone this repository.
 2. Open **Google Chrome** and navigate to `chrome://extensions/`.
 3. Enable **Developer mode** (toggle switch in the top-right corner).
@@ -13,7 +16,7 @@ X-CrossPost is a Chrome extension that allows you to cross-post your X content t
 
 ## Setting Up Mastodon
 To connect Mastodon, you need to create an **application** on your Mastodon instance and obtain an API token.
-
+[text](https://x.com/home)
 ### Steps to Get Your Mastodon API Token:
 1. **Log in to your Mastodon account.**
 2. Navigate to **Preferences → Development**.
